@@ -1,7 +1,7 @@
 name: docker-build-latest
 
 env:
-  dockerhub_repository: "kutt/kutt"
+  dockerhub_repository: "abhinavzspace/kutt"
 
 on:
   release:
@@ -34,4 +34,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
-          tags: kutt/kutt:${{ github.event.release.tag_name }}, kutt/kutt:latest
+          tags: abhinavzspace/kutt:${{ github.event.release.tag_name }}, abhinavzspace/kutt:latest
