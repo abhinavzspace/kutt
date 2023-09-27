@@ -1,8 +1,8 @@
 name: docker-build-latest
 
 env:
-  dockerhub_repository: "kutt/kutt"
-  dockerhub_tag: "develop"
+  dockerhub_repository: "abhinavzspace/kutt"
+  dockerhub_tag: "latest"
 
 on:
   push:
