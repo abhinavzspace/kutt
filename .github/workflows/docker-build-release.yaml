@@ -34,4 +34,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
-          tags: abhinavzspace/kutt:${{ github.event.release.tag_name }}, abhinavzspace/kutt:latest
+          tags: ${{ env.dockerhub_repository }}:${{ github.event.release.tag_name }}, ${{ env.dockerhub_repository }}:latest
